@@ -293,6 +293,25 @@ section { padding: 92px 0; }
 }
 .pub-title { margin: 0 0 6px; font-size: 16px; color: var(--ink); line-height: 1.5; }
 .pub-title .self { font-weight: 700; color: var(--navy-900); }
+.pub-link {
+  color: var(--navy-700);
+  text-decoration: underline;
+  text-decoration-color: var(--paper-line);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.pub-link:hover {
+  color: var(--orange-deep);
+  text-decoration-color: var(--orange);
+}
+.pub-link::after {
+  content: "\2197";
+  font-size: 0.85em;
+  margin-left: 4px;
+  color: var(--orange-deep);
+  display: inline-block;
+}
 .pub-venue {
   font-family: var(--font-mono);
   font-size: 12.5px;
